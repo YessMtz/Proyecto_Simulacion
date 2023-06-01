@@ -40,7 +40,6 @@
             this.cantidadNumeros = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.BntGenerar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.variableXo = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -163,7 +162,6 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.orden = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NuPseudo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -276,15 +274,6 @@
             this.BntGenerar.Text = "Generar";
             this.BntGenerar.UseVisualStyleBackColor = false;
             this.BntGenerar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(178, 119);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(272, 233);
-            this.dataGridView1.TabIndex = 12;
             // 
             // variableXo
             // 
@@ -1227,6 +1216,7 @@
             this.Salir.TabIndex = 131;
             this.Salir.Text = "Salir";
             this.Salir.UseVisualStyleBackColor = false;
+            this.Salir.Click += new System.EventHandler(this.Salir_Click);
             // 
             // dataGridView2
             // 
@@ -1377,7 +1367,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.variableXo);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BntGenerar);
             this.Controls.Add(this.cantidadNumeros);
             this.Controls.Add(this.label6);
@@ -1393,7 +1382,6 @@
             this.Name = "Proyecto_Simulacion";
             this.Text = "Proyecto Simulacion \"LABORATORIO\"";
             this.Load += new System.EventHandler(this.Proyecto_Simulacion_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1414,7 +1402,6 @@
         private System.Windows.Forms.TextBox cantidadNumeros;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button BntGenerar;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox variableXo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;

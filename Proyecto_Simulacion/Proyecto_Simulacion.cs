@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace Proyecto_Simulacion
 {
+   
+
     public partial class Proyecto_Simulacion : Form
     {
         public Proyecto_Simulacion()
@@ -21,7 +23,10 @@ namespace Proyecto_Simulacion
 
         double SC, EM, RP, Sulf, AC, Fos, Ox;
 
-
+        private void Salir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
 
         //tabla para agregar los datos
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -63,6 +68,7 @@ namespace Proyecto_Simulacion
             textBox25.Clear();
             textBox26.Clear();
             textBox31.Clear();
+            dataGridView2.ClearSelection();
         }
 
         private void Proyecto_Simulacion_Load(object sender, EventArgs e)
@@ -75,41 +81,49 @@ namespace Proyecto_Simulacion
 
         }
 
+        //arreglo
+        int valN;
+        public static double[] numerosX;
+
         //boton para generar y agregarlos a la tabla
         private void button1_Click(object sender, EventArgs e)
         {
-            PseudoAle();
+            a = double.Parse(variableA.Text);
+            c = double.Parse(variableC.Text);
+            m = double.Parse(variableM.Text);
+            Xo = double.Parse(variableXo.Text);
+            valN= int.Parse(cantidadNumeros.Text);
 
-            //agregar nuevo renglon
-            int n = dataGridView2.Rows.Add();
-
-
-
-
-        }
-
-
-        public void PseudoAle()
-        {
-            a = Convert.ToDouble(variableA.Text);
-            c = Convert.ToDouble(variableC.Text);
-            m = Convert.ToDouble(variableM.Text);
-            Xo = Convert.ToDouble(variableXo.Text);
-            Xn = Convert.ToDouble(variableXN.Text);
-            double numsAle = Convert.ToDouble(cantidadNumeros.Text);
-
+            numerosX= new double[valN];
+            
+            double numsAle = double.Parse(cantidadNumeros.Text);
+            double Xr;
             //ciclo para repetir las operaciones
             for (int i = 0; i < numsAle; i++)
             {
-                int n1= dataGridView1.Rows.Add();
-                dataGridView1.Rows[n1].Cells[0].Value = i + 1;
+
+                //se agregan a la tabla
+                int n1= dataGridView2.Rows.Add();
+                dataGridView2.Rows[n1].Cells[0].Value = i + 1;
 
                 //calculo de numero pseudoaleatrorios
                 Xn = (((a * Xo) + c) % m);
+                Xr = (Xn / m);
+
+                //redondeo de decimales
+                Xr= Math.Round(Xr, 4);
+                double dec = Xr;
+                Xo = Convert.ToInt32(Xr * m);
+                
+                //acumula los numeros
+                numerosX[i] = Xr;
+
+                //datos para la tabla
+                dataGridView2.Rows[n1].Cells[1].Value = Xr.ToString();
             
             }
-
         }
+
 
         //analisis de concentracion de contaminantes
         public void Contaminantes()

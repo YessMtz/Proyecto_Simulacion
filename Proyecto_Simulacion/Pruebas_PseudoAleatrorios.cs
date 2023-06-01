@@ -18,7 +18,7 @@ namespace Proyecto_Simulacion
         }
 
         //numeros pseudo
-        double numPseudo;
+        double numPseudo, a1, c1, m1, Xo1, Xn1, promedioX, varAUX;
 
 
 
@@ -53,8 +53,52 @@ namespace Proyecto_Simulacion
             this.Hide();
         }
 
+        //arreglo
+        int vlN;
+        public static double[] numerosX;
+
+        //BOTON PARA GENERAR
         private void Generador_Click(object sender, EventArgs e)
         {
+            a1 = double.Parse(variableA.Text);
+            c1 = double.Parse(variableC.Text);
+            m1 = double.Parse(variableM.Text);
+            Xo1 = double.Parse(variableXN.Text);
+            vlN = int.Parse(cantidadNumeros.Text);
+
+            numerosX = new double[vlN];
+
+            double numsAle = double.Parse(cantidadNumeros.Text);
+            double Xr;
+            //ciclo para repetir las operaciones
+            for (int i = 0; i < numsAle; i++)
+            {
+
+                //se agregan a la tabla
+                int n1 = tablaValores.Rows.Add();
+                tablaValores.Rows[n1].Cells[0].Value = i + 1;
+
+                //calculo de numero pseudoaleatrorios
+                Xn1 = (((a1 * Xo1) + c1) % m1);
+                Xr = (Xn1 / m1);
+
+                //redondeo de decimales
+                Xr = Math.Round(Xr, 4);
+                double dec = Xr;
+                Xo1 = Convert.ToInt32(Xr * m1);
+
+                //acumula los numeros
+                numerosX[i] = Xr;
+                varAUX= promedioX + Xr;
+
+                //datos para la tabla
+                tablaValores.Rows[n1].Cells[1].Value = Xr.ToString();
+
+            }
+
+            promedioX = varAUX / vlN;
+
+
 
 
         }
@@ -87,6 +131,11 @@ namespace Proyecto_Simulacion
                 }
                 gAnt = g;
             }
+        }
+
+        private void tablaValores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
