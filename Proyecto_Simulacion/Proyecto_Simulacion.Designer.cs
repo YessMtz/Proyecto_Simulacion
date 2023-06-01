@@ -160,7 +160,11 @@
             this.textBox71 = new System.Windows.Forms.TextBox();
             this.Limpiar = new System.Windows.Forms.Button();
             this.Salir = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.orden = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NuPseudo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -279,7 +283,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(178, 119);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(256, 176);
+            this.dataGridView1.Size = new System.Drawing.Size(272, 233);
             this.dataGridView1.TabIndex = 12;
             // 
             // variableXo
@@ -1217,12 +1221,35 @@
             this.Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Salir.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Salir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Salir.Location = new System.Drawing.Point(1103, 280);
+            this.Salir.Location = new System.Drawing.Point(1103, 283);
             this.Salir.Name = "Salir";
             this.Salir.Size = new System.Drawing.Size(100, 30);
             this.Salir.TabIndex = 131;
             this.Salir.Text = "Salir";
             this.Salir.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.PaleTurquoise;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.orden,
+            this.NuPseudo});
+            this.dataGridView2.Location = new System.Drawing.Point(186, 129);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(254, 213);
+            this.dataGridView2.TabIndex = 132;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // orden
+            // 
+            this.orden.HeaderText = "#";
+            this.orden.Name = "orden";
+            // 
+            // NuPseudo
+            // 
+            this.NuPseudo.HeaderText = "Numeros Pseudo";
+            this.NuPseudo.Name = "NuPseudo";
             // 
             // Proyecto_Simulacion
             // 
@@ -1230,6 +1257,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1277, 620);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.Salir);
             this.Controls.Add(this.Limpiar);
             this.Controls.Add(this.label44);
@@ -1366,6 +1394,7 @@
             this.Text = "Proyecto Simulacion \"LABORATORIO\"";
             this.Load += new System.EventHandler(this.Proyecto_Simulacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1505,6 +1534,9 @@
         private System.Windows.Forms.TextBox textBox71;
         private System.Windows.Forms.Button Limpiar;
         private System.Windows.Forms.Button Salir;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orden;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NuPseudo;
     }
 }
 

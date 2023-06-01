@@ -19,8 +19,15 @@ namespace Proyecto_Simulacion
         double a, c, m, Xn, Xo;
         int cantNum;
 
-        double SC, EM, RP, Sulf, AC, Fos, Ox; 
+        double SC, EM, RP, Sulf, AC, Fos, Ox;
 
+
+
+        //tabla para agregar los datos
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {   
+
+        }
 
         private void label36_Click(object sender, EventArgs e)
         {
@@ -68,13 +75,20 @@ namespace Proyecto_Simulacion
 
         }
 
-        //boton para generar
+        //boton para generar y agregarlos a la tabla
         private void button1_Click(object sender, EventArgs e)
         {
             PseudoAle();
+
+            //agregar nuevo renglon
+            int n = dataGridView2.Rows.Add();
+
+
+
+
         }
 
-        
+
         public void PseudoAle()
         {
             a = Convert.ToDouble(variableA.Text);

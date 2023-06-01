@@ -1,0 +1,12 @@
+C:\Users\LAB-DSC-ITT\Documents\GitHub\Proyecto_Simulacion\Proyecto_Simulacion\obj\Debug\Proyecto_Simulacion.csproj.AssemblyReference.cache
+C:\Users\LAB-DSC-ITT\Documents\GitHub\Proyecto_Simulacion\Proyecto_Simulacion\obj\Debug\Proyecto_Simulacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\LAB-DSC-ITT\Documents\GitHub\Proyecto_Simulacion\Proyecto_Simulacion\obj\Debug\Proyecto_Simulacion.Proyecto_Simulacion.resources
+C:\Users\LAB-DSC-ITT\Documents\GitHub\Proyecto_Simulacion\Proyecto_Simulacion\obj\Debug\Proyecto_Simulacion.Properties.Resources.resources
+C:\Users\LAB-DSC-ITT\Documents\GitHub\Proyecto_Simulacion\Proyecto_Simulacion\obj\Debug\Proyecto_Simulacion.Respuesta.resources
+C:\Users\LAB-DSC-ITT\Documents\GitHub\Proyecto_Simulacion\Proyecto_Simulacion\obj\Debug\Proyecto_Simulacion.csproj.GenerateResource.cache
+C:\Users\LAB-DSC-ITT\Documents\GitHub\Proyecto_Simulacion\Proyecto_Simulacion\obj\Debug\Proyecto_Simulacion.csproj.CoreCompileInputs.cache
+C:\Users\LAB-DSC-ITT\Documents\GitHub\Proyecto_Simulacion\Proyecto_Simulacion\bin\Debug\Proyecto_Simulacion.exe.config
+C:\Users\LAB-DSC-ITT\Documents\GitHub\Proyecto_Simulacion\Proyecto_Simulacion\bin\Debug\Proyecto_Simulacion.exe
+C:\Users\LAB-DSC-ITT\Documents\GitHub\Proyecto_Simulacion\Proyecto_Simulacion\bin\Debug\Proyecto_Simulacion.pdb
+C:\Users\LAB-DSC-ITT\Documents\GitHub\Proyecto_Simulacion\Proyecto_Simulacion\obj\Debug\Proyecto_Simulacion.exe
+C:\Users\LAB-DSC-ITT\Documents\GitHub\Proyecto_Simulacion\Proyecto_Simulacion\obj\Debug\Proyecto_Simulacion.pdb

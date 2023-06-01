@@ -41,7 +41,7 @@ namespace Proyecto_Simulacion
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Generador = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tablaValores = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.valorDistribucion = new System.Windows.Forms.TextBox();
@@ -60,7 +60,9 @@ namespace Proyecto_Simulacion
             this.label10 = new System.Windows.Forms.Label();
             this.cantidadNumeros = new System.Windows.Forms.TextBox();
             this.Regresar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.orden = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numPse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaValores)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -170,15 +172,19 @@ namespace Proyecto_Simulacion
             this.Generador.TabIndex = 27;
             this.Generador.Text = "Generador";
             this.Generador.UseVisualStyleBackColor = false;
+            this.Generador.Click += new System.EventHandler(this.Generador_Click);
             // 
-            // dataGridView1
+            // tablaValores
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 238);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 28;
+            this.tablaValores.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.tablaValores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tablaValores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.orden,
+            this.numPse});
+            this.tablaValores.Location = new System.Drawing.Point(35, 238);
+            this.tablaValores.Name = "tablaValores";
+            this.tablaValores.Size = new System.Drawing.Size(274, 150);
+            this.tablaValores.TabIndex = 28;
             // 
             // label5
             // 
@@ -347,6 +353,16 @@ namespace Proyecto_Simulacion
             this.Regresar.UseVisualStyleBackColor = false;
             this.Regresar.Click += new System.EventHandler(this.Regresar_Click);
             // 
+            // orden
+            // 
+            this.orden.HeaderText = "#";
+            this.orden.Name = "orden";
+            // 
+            // numPse
+            // 
+            this.numPse.HeaderText = "Num.Pseudo";
+            this.numPse.Name = "numPse";
+            // 
             // Respuesta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,7 +387,7 @@ namespace Proyecto_Simulacion
             this.Controls.Add(this.alfa);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tablaValores);
             this.Controls.Add(this.Generador);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
@@ -387,7 +403,7 @@ namespace Proyecto_Simulacion
             this.Name = "Respuesta";
             this.Text = "Pruebas_PseudoAleatrorios";
             this.Load += new System.EventHandler(this.Pruebas_PseudoAleatrorios_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaValores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,7 +423,7 @@ namespace Proyecto_Simulacion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Generador;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView tablaValores;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox valorDistribucion;
@@ -426,5 +442,7 @@ namespace Proyecto_Simulacion
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox cantidadNumeros;
         private System.Windows.Forms.Button Regresar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orden;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numPse;
     }
 }
