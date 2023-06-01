@@ -16,6 +16,47 @@ namespace Proyecto_Simulacion
         {
             InitializeComponent();
         }
+        double a, c, m, Xn, Xo;
+        int cantNum;
+
+        double SC, EM, RP, Sulf, AC, Fos, Ox; 
+
+
+        private void label36_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //limpiar cajas de texto
+        private void Limpiar_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+            textBox7.Clear();
+            textBox9.Clear();
+            textBox10.Clear();
+            textBox11.Clear();
+            textBox12.Clear();
+            textBox13.Clear();
+            textBox14.Clear();
+            textBox15.Clear();
+            textBox16.Clear();
+            textBox17.Clear();
+            textBox18.Clear();
+            textBox19.Clear();
+            textBox20.Clear();
+            textBox21.Clear();
+            textBox22.Clear();
+            textBox23.Clear();
+            textBox24.Clear();
+            textBox25.Clear();
+            textBox26.Clear();
+            textBox31.Clear();
+        }
 
         private void Proyecto_Simulacion_Load(object sender, EventArgs e)
         {
@@ -26,5 +67,57 @@ namespace Proyecto_Simulacion
         {
 
         }
+
+        //boton para generar
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PseudoAle();
+        }
+
+        
+        public void PseudoAle()
+        {
+            a = Convert.ToDouble(variableA.Text);
+            c = Convert.ToDouble(variableC.Text);
+            m = Convert.ToDouble(variableM.Text);
+            Xo = Convert.ToDouble(variableXo.Text);
+            Xn = Convert.ToDouble(variableXN.Text);
+            double numsAle = Convert.ToDouble(cantidadNumeros.Text);
+
+            //ciclo para repetir las operaciones
+            for (int i = 0; i < numsAle; i++)
+            {
+                int n1= dataGridView1.Rows.Add();
+                dataGridView1.Rows[n1].Cells[0].Value = i + 1;
+
+                //calculo de numero pseudoaleatrorios
+                Xn = (((a * Xo) + c) % m);
+            
+            }
+
+        }
+
+        //analisis de concentracion de contaminantes
+        public void Contaminantes()
+        {
+            //Substacias coloidales = SC        0 a 0.05
+            //Exceso Mercurio = EM              0.05 a 0.15
+            //Residuos Pretroquimicos = RP      0.26 a 0.40
+            //Sulfatos = Sulf                   0.40 a 0.55
+            //Acido Clorhidrico =AC             0.55 a 0.67
+            //Fosfatos = Fos                    0.67 a 0.83
+            //Oxidos =Ox;                       0.83 a 1.0
+
+
+            if (SC < 0.05f)
+            { 
+                
+            }
+        }
+
+
     }
+
+   
+
 }
