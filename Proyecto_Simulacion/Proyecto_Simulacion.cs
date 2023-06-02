@@ -23,6 +23,18 @@ namespace Proyecto_Simulacion
 
         double SC, EM, RP, Sulf, AC, Fos, Ox;
 
+        private void Salir1_Click(object sender, EventArgs e)
+        {
+            Close(); 
+        }
+
+        private void Pruebas_Click(object sender, EventArgs e)
+        {
+            Form Form2 = new Pruebas();
+            Form2.ShowDialog();
+            this.Hide();
+        }
+
         private void Salir_Click(object sender, EventArgs e)
         {
             Close();

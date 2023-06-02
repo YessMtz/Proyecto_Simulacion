@@ -1,7 +1,7 @@
 ﻿
 namespace Proyecto_Simulacion
 {
-    partial class Respuesta
+    partial class Pruebas
     {
         /// <summary>
         /// Required designer variable.
@@ -415,6 +415,7 @@ namespace Proyecto_Simulacion
             this.Prueba1.TabIndex = 49;
             this.Prueba1.Text = "Prueba 1";
             this.Prueba1.UseVisualStyleBackColor = false;
+            this.Prueba1.Click += new System.EventHandler(this.Prueba1_Click);
             // 
             // textBox2
             // 
@@ -490,12 +491,13 @@ namespace Proyecto_Simulacion
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(127, 554);
+            this.button1.Location = new System.Drawing.Point(163, 571);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 31);
             this.button1.TabIndex = 59;
             this.button1.Text = "Prueba 2";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label17
             // 
@@ -543,7 +545,7 @@ namespace Proyecto_Simulacion
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // Respuesta
+            // Pruebas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -595,7 +597,7 @@ namespace Proyecto_Simulacion
             this.Controls.Add(this.label3);
             this.Controls.Add(this.variableA);
             this.Controls.Add(this.label2);
-            this.Name = "Respuesta";
+            this.Name = "Pruebas";
             this.Text = "Pruebas_PseudoAleatrorios";
             this.Load += new System.EventHandler(this.Pruebas_PseudoAleatrorios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablaValores)).EndInit();

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Simulacion
 {
-    public partial class Respuesta : Form
+    public partial class Pruebas : Form
     {
-        public Respuesta()
+        public Pruebas()
         {
             InitializeComponent();
         }
@@ -53,12 +53,8 @@ namespace Proyecto_Simulacion
             this.Hide();
         }
 
-        //arreglo
-        int vlN;
-        public static double[] numerosX;
-
-        //BOTON PARA GENERAR
-        private void Generador_Click(object sender, EventArgs e)
+        // BOTON PARA PRUEBA 2
+        private void button1_Click(object sender, EventArgs e)
         {
             a1 = double.Parse(variableA.Text);
             c1 = double.Parse(variableC.Text);
@@ -75,8 +71,8 @@ namespace Proyecto_Simulacion
             {
 
                 //se agregan a la tabla
-                int n1 = tablaValores.Rows.Add();
-                tablaValores.Rows[n1].Cells[0].Value = i + 1;
+                int n1 = tabla2.Rows.Add();
+                tabla2.Rows[n1].Cells[0].Value = i + 1;
 
                 //calculo de numero pseudoaleatrorios
                 Xn1 = (((a1 * Xo1) + c1) % m1);
@@ -89,10 +85,61 @@ namespace Proyecto_Simulacion
 
                 //acumula los numeros
                 numerosX[i] = Xr;
-                varAUX= promedioX + Xr;
+                varAUX = promedioX + Xr;
 
                 //datos para la tabla
-                tablaValores.Rows[n1].Cells[1].Value = Xr.ToString();
+                tabla2.Rows[n1].Cells[1].Value = Xr.ToString();
+
+            }
+
+            promedioX = varAUX / vlN;
+        }
+
+        private void Prueba1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //arreglo
+        int vlN;
+        public static double[] numerosX;
+
+        //BOTON PARA GENERAR
+        private void Generador_Click(object sender, EventArgs e)
+        {
+            a1 = double.Parse(variableA.Text);
+            c1 = double.Parse(variableC.Text);
+            m1 = double.Parse(variableM.Text);
+            Xo1 = double.Parse(variableXN.Text);
+            vlN = int.Parse(cantidadNumeros.Text);
+
+            numerosX = new double[vlN];
+
+            double numsAle = double.Parse(cantidadNumeros.Text);
+            double Xr1;
+            //ciclo para repetir las operaciones
+            for (int i = 0; i < vlN; i++)
+            {
+
+                //se agregan a la tabla
+                int n1 = tablaValores.Rows.Add();
+                tablaValores.Rows[n1].Cells[0].Value = i + 1;
+
+                //calculo de numero pseudoaleatrorios
+                Xn1 = (((a1 * Xo1) + c1) % m1);
+                Xr1 = (Xn1 / m1);
+
+                //redondeo de decimales
+                Xr1 = Math.Round(Xr1, 4);
+                double dec = Xr1;
+                Xo1 = Convert.ToInt32(Xr1 * m1);
+
+                //acumula los numeros
+                numerosX[i] = Xr1;
+                varAUX= varAUX + Xr1;
+
+                //datos para la tabla
+                tablaValores.Rows[n1].Cells[1].Value = Xr1.ToString();
 
             }
 
