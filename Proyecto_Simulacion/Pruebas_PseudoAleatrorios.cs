@@ -18,112 +18,112 @@ namespace Proyecto_Simulacion
         }
 
         //numeros pseudo
-        double numPseudo, a1, c1, m1, Xo1, Xn1, promedioX, varAUX;
-
-
-
-
+        double a1, c1, m1, Xo1, Xn1, varAUX, deStd, promedioX, Zcero, ZCal;
 
         private void Pruebas_PseudoAleatrorios_Load(object sender, EventArgs e)
         {
-            int cantNum = Convert.ToInt32(numeros.Text);
+            int cantNum = Convert.ToInt32(TotalNum.Text);
 
            // int valoresPseudo = new int [cantNum];
         }
 
         private void LimpiarF1_Click(object sender, EventArgs e)
         {
-            variableA.Clear();
-            variableC.Clear();
-            variableM.Clear();
-            variableXN.Clear();
-            numeros.Clear();
+            varA.Clear();
+            varC.Clear();
+            varM.Clear();
+            varXn.Clear();
+            TotalNum.Clear();
             alfa.Clear();
             promedio.Clear();
-            Za_z.Clear();
+            desSTD.Clear();
             valorDistribucion.Clear();
             Lim_inf.Clear();
             Lim_Sup.Clear();
+            gradoConfianza.Clear();
         }
 
         private void Regresar_Click(object sender, EventArgs e)
         {
-            Form Form1 = new Proyecto_Simulacion();
-            Form1.ShowDialog();
+            Form Forma3 = new Proyecto_Simulacion();
+            Forma3.Show();
             this.Hide();
         }
 
-        // BOTON PARA PRUEBA 2
+       
         private void button1_Click(object sender, EventArgs e)
         {
-            a1 = double.Parse(variableA.Text);
-            c1 = double.Parse(variableC.Text);
-            m1 = double.Parse(variableM.Text);
-            Xo1 = double.Parse(variableXN.Text);
-            vlN = int.Parse(cantidadNumeros.Text);
-
-            numerosX = new double[vlN];
-
-            double numsAle = double.Parse(cantidadNumeros.Text);
-            double Xr;
-            //ciclo para repetir las operaciones
-            for (int i = 0; i < numsAle; i++)
-            {
-
-                //se agregan a la tabla
-                int n1 = tabla2.Rows.Add();
-                tabla2.Rows[n1].Cells[0].Value = i + 1;
-
-                //calculo de numero pseudoaleatrorios
-                Xn1 = (((a1 * Xo1) + c1) % m1);
-                Xr = (Xn1 / m1);
-
-                //redondeo de decimales
-                Xr = Math.Round(Xr, 4);
-                double dec = Xr;
-                Xo1 = Convert.ToInt32(Xr * m1);
-
-                //acumula los numeros
-                numerosX[i] = Xr;
-                varAUX = promedioX + Xr;
-
-                //datos para la tabla
-                tabla2.Rows[n1].Cells[1].Value = Xr.ToString();
-
-            }
-
-            promedioX = varAUX / vlN;
         }
-
+        
+        // BOTON PARA PRUEBA 2
         private void Prueba1_Click(object sender, EventArgs e)
         {
+            double alfa1 = double.Parse(gradoConfianza.Text)/100;
+            alfa.Text = Convert.ToString(alfa1);
 
+            promedioX = varAUX / valoresN;
+            promedio.Text = Convert.ToString(promedioX);
+
+            Zcero = ((0.5 - promedioX) * Math.Sqrt(valoresN)) / Math.Sqrt(1 / 12);
+            Lim_inf.Text = Convert.ToString(Zcero);
+
+            double desviacion = double.Parse(gradoConfianza.Text) / 100;
+            desSTD.Text = Convert.ToString(desviacion);
+
+            ZCal = desviacion / 2;
+            Lim_Sup.Text = Convert.ToString(ZCal);
+
+            double GradoConfiaza = busGRado;
+            if (Zcero >= GradoConfiaza)
+            {
+                respuesta.Text = "Si estan distribuidos uniformemente";
+            }
+            else
+            {
+                respuesta.Text = "No estan distribuidos uniformemente";
+            }
+
+        }
+
+        private void Generador2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void Salir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Prueba2_Click(object sender, EventArgs e)
+        {
+            Form Forma2 = new Pruebas();
+            Forma2.Show();
+            this.Hide();
         }
 
         //arreglo
-        int vlN;
-        public static double[] numerosX;
+        int valoresN;
+        public double[] numX;
 
-        //BOTON PARA GENERAR
+        //BOTON PARA GENERAR VALORES PSEUDO
         private void Generador_Click(object sender, EventArgs e)
         {
-            a1 = double.Parse(variableA.Text);
-            c1 = double.Parse(variableC.Text);
-            m1 = double.Parse(variableM.Text);
-            Xo1 = double.Parse(variableXN.Text);
-            vlN = int.Parse(cantidadNumeros.Text);
+            a1 = double.Parse(varA.Text);
+            c1 = double.Parse(varC.Text);
+            m1 = double.Parse(varM.Text);
+            Xo1 = double.Parse(varXn.Text);
+            valoresN = int.Parse(TotalNum.Text);
 
-            numerosX = new double[vlN];
-
-            double numsAle = double.Parse(cantidadNumeros.Text);
+            numX = new double[valoresN];
+            double numAle = double.Parse(TotalNum.Text);
             double Xr1;
-            //ciclo para repetir las operaciones
-            for (int i = 0; i < vlN; i++)
-            {
 
+            //ciclo para repetir las operaciones
+            for (int i = 0; i < numAle; i++)
+            {
                 //se agregan a la tabla
-                int n1 = tablaValores.Rows.Add();
-                tablaValores.Rows[n1].Cells[0].Value = i + 1;
+                int n1 = dataGridView1.Rows.Add();
+                dataGridView1.Rows[n1].Cells[0].Value = i + 1;
 
                 //calculo de numero pseudoaleatrorios
                 Xn1 = (((a1 * Xo1) + c1) % m1);
@@ -135,26 +135,18 @@ namespace Proyecto_Simulacion
                 Xo1 = Convert.ToInt32(Xr1 * m1);
 
                 //acumula los numeros
-                numerosX[i] = Xr1;
-                varAUX= varAUX + Xr1;
+                numX[i] = Xr1;
+                varAUX = varAUX + Xr1;
 
                 //datos para la tabla
-                tablaValores.Rows[n1].Cells[1].Value = Xr1.ToString();
+                dataGridView1.Rows[n1].Cells[1].Value = Xr1.ToString();
 
             }
 
-            promedioX = varAUX / vlN;
-
-
-
-
+            
         }
+        double busGRado;
 
-        //FORMULA PARA BUSCAR SI UN NUMERO PSEUDO ALEATORIO ESTA DENTRO DE LA TABLA DE DISTRIBUCION NORMAL
-        public void VerificarNum()
-        {
-           // for(int i =0; )
-        }
 
         //FORMULA DE DISTRIBUCION NORMAL
         static double Gauss(double x)
@@ -164,7 +156,7 @@ namespace Proyecto_Simulacion
         }
 
         //TABLA DE DISTRIBUCION NORMAL
-        public void TablaDistribucion()
+        public double TablaDistribucion(double valor)
         {
             double suma = 0.5;
             double gAnt = 0;
@@ -177,7 +169,14 @@ namespace Proyecto_Simulacion
                     suma += (g + gAnt) / 2 / 100;
                 }
                 gAnt = g;
+            
+                if(gAnt == valor)
+                {
+                   busGRado = gAnt;
+                }
             }
+            return busGRado;
+
         }
 
         private void tablaValores_CellContentClick(object sender, DataGridViewCellEventArgs e)

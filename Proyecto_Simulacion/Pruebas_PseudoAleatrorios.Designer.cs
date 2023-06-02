@@ -30,28 +30,24 @@ namespace Proyecto_Simulacion
         private void InitializeComponent()
         {
             this.label8 = new System.Windows.Forms.Label();
-            this.numeros = new System.Windows.Forms.TextBox();
+            this.TotalNum = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.variableXN = new System.Windows.Forms.TextBox();
-            this.variableM = new System.Windows.Forms.TextBox();
+            this.varXn = new System.Windows.Forms.TextBox();
+            this.varM = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.variableC = new System.Windows.Forms.TextBox();
+            this.varC = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.variableA = new System.Windows.Forms.TextBox();
+            this.varA = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Generador = new System.Windows.Forms.Button();
-            this.tablaValores = new System.Windows.Forms.DataGridView();
-            this.orden = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.numPse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.valorDistribucion = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.LimpiarF1 = new System.Windows.Forms.Button();
             this.Lim_inf = new System.Windows.Forms.TextBox();
-            this.Za_z = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.desSTD = new System.Windows.Forms.TextBox();
             this.promedio = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.alfa = new System.Windows.Forms.TextBox();
@@ -60,27 +56,18 @@ namespace Proyecto_Simulacion
             this.label15 = new System.Windows.Forms.Label();
             this.Lim_Sup = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.cantidadNumeros = new System.Windows.Forms.TextBox();
+            this.respuesta = new System.Windows.Forms.TextBox();
             this.Regresar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.gradoConfianza = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.Prueba1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.tabla2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.tablaValores)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabla2)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.orden = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NuPseudo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Prueba2 = new System.Windows.Forms.Button();
+            this.Salir = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -93,12 +80,12 @@ namespace Proyecto_Simulacion
             this.label8.TabIndex = 25;
             this.label8.Text = "Xn:";
             // 
-            // numeros
+            // TotalNum
             // 
-            this.numeros.Location = new System.Drawing.Point(113, 223);
-            this.numeros.Name = "numeros";
-            this.numeros.Size = new System.Drawing.Size(71, 20);
-            this.numeros.TabIndex = 24;
+            this.TotalNum.Location = new System.Drawing.Point(113, 223);
+            this.TotalNum.Name = "TotalNum";
+            this.TotalNum.Size = new System.Drawing.Size(71, 20);
+            this.TotalNum.TabIndex = 24;
             // 
             // label7
             // 
@@ -110,19 +97,19 @@ namespace Proyecto_Simulacion
             this.label7.TabIndex = 23;
             this.label7.Text = "Total de \r\nnumeros;";
             // 
-            // variableXN
+            // varXn
             // 
-            this.variableXN.Location = new System.Drawing.Point(175, 171);
-            this.variableXN.Name = "variableXN";
-            this.variableXN.Size = new System.Drawing.Size(71, 20);
-            this.variableXN.TabIndex = 22;
+            this.varXn.Location = new System.Drawing.Point(175, 171);
+            this.varXn.Name = "varXn";
+            this.varXn.Size = new System.Drawing.Size(71, 20);
+            this.varXn.TabIndex = 22;
             // 
-            // variableM
+            // varM
             // 
-            this.variableM.Location = new System.Drawing.Point(59, 171);
-            this.variableM.Name = "variableM";
-            this.variableM.Size = new System.Drawing.Size(71, 20);
-            this.variableM.TabIndex = 21;
+            this.varM.Location = new System.Drawing.Point(59, 171);
+            this.varM.Name = "varM";
+            this.varM.Size = new System.Drawing.Size(71, 20);
+            this.varM.TabIndex = 21;
             // 
             // label4
             // 
@@ -134,12 +121,12 @@ namespace Proyecto_Simulacion
             this.label4.TabIndex = 20;
             this.label4.Text = "m:";
             // 
-            // variableC
+            // varC
             // 
-            this.variableC.Location = new System.Drawing.Point(175, 133);
-            this.variableC.Name = "variableC";
-            this.variableC.Size = new System.Drawing.Size(71, 20);
-            this.variableC.TabIndex = 19;
+            this.varC.Location = new System.Drawing.Point(175, 133);
+            this.varC.Name = "varC";
+            this.varC.Size = new System.Drawing.Size(71, 20);
+            this.varC.TabIndex = 19;
             // 
             // label3
             // 
@@ -151,12 +138,12 @@ namespace Proyecto_Simulacion
             this.label3.TabIndex = 18;
             this.label3.Text = "c:";
             // 
-            // variableA
+            // varA
             // 
-            this.variableA.Location = new System.Drawing.Point(59, 133);
-            this.variableA.Name = "variableA";
-            this.variableA.Size = new System.Drawing.Size(71, 20);
-            this.variableA.TabIndex = 17;
+            this.varA.Location = new System.Drawing.Point(59, 133);
+            this.varA.Name = "varA";
+            this.varA.Size = new System.Drawing.Size(71, 20);
+            this.varA.TabIndex = 17;
             // 
             // label2
             // 
@@ -172,7 +159,7 @@ namespace Proyecto_Simulacion
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Georgia", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(134, 24);
+            this.label1.Location = new System.Drawing.Point(93, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(827, 41);
             this.label1.TabIndex = 26;
@@ -192,33 +179,6 @@ namespace Proyecto_Simulacion
             this.Generador.UseVisualStyleBackColor = false;
             this.Generador.Click += new System.EventHandler(this.Generador_Click);
             // 
-            // tablaValores
-            // 
-            this.tablaValores.BackgroundColor = System.Drawing.Color.LightSeaGreen;
-            this.tablaValores.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tablaValores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tablaValores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.orden,
-            this.numPse});
-            this.tablaValores.Location = new System.Drawing.Point(744, 133);
-            this.tablaValores.Name = "tablaValores";
-            this.tablaValores.ReadOnly = true;
-            this.tablaValores.Size = new System.Drawing.Size(274, 150);
-            this.tablaValores.TabIndex = 28;
-            this.tablaValores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaValores_CellContentClick);
-            // 
-            // orden
-            // 
-            this.orden.HeaderText = "#";
-            this.orden.Name = "orden";
-            this.orden.ReadOnly = true;
-            // 
-            // numPse
-            // 
-            this.numPse.HeaderText = "Num.Pseudo";
-            this.numPse.Name = "numPse";
-            this.numPse.ReadOnly = true;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -233,24 +193,25 @@ namespace Proyecto_Simulacion
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(439, 230);
+            this.label6.Location = new System.Drawing.Point(526, 230);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 18);
+            this.label6.Size = new System.Drawing.Size(31, 18);
             this.label6.TabIndex = 42;
-            this.label6.Text = "Limite Inferior;";
+            this.label6.Text = "Zo:";
             // 
             // valorDistribucion
             // 
             this.valorDistribucion.Location = new System.Drawing.Point(588, 188);
             this.valorDistribucion.Name = "valorDistribucion";
-            this.valorDistribucion.Size = new System.Drawing.Size(71, 20);
+            this.valorDistribucion.ReadOnly = true;
+            this.valorDistribucion.Size = new System.Drawing.Size(97, 20);
             this.valorDistribucion.TabIndex = 41;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(431, 184);
+            this.label9.Location = new System.Drawing.Point(431, 187);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(126, 36);
             this.label9.TabIndex = 40;
@@ -262,7 +223,7 @@ namespace Proyecto_Simulacion
             this.LimpiarF1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LimpiarF1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LimpiarF1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LimpiarF1.Location = new System.Drawing.Point(744, 479);
+            this.LimpiarF1.Location = new System.Drawing.Point(703, 391);
             this.LimpiarF1.Name = "LimpiarF1";
             this.LimpiarF1.Size = new System.Drawing.Size(100, 38);
             this.LimpiarF1.TabIndex = 39;
@@ -274,31 +235,24 @@ namespace Proyecto_Simulacion
             // 
             this.Lim_inf.Location = new System.Drawing.Point(588, 231);
             this.Lim_inf.Name = "Lim_inf";
-            this.Lim_inf.Size = new System.Drawing.Size(71, 20);
+            this.Lim_inf.ReadOnly = true;
+            this.Lim_inf.Size = new System.Drawing.Size(97, 20);
             this.Lim_inf.TabIndex = 36;
             // 
-            // Za_z
+            // desSTD
             // 
-            this.Za_z.Location = new System.Drawing.Point(588, 159);
-            this.Za_z.Name = "Za_z";
-            this.Za_z.Size = new System.Drawing.Size(71, 20);
-            this.Za_z.TabIndex = 35;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(516, 158);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 18);
-            this.label11.TabIndex = 34;
-            this.label11.Text = "Za/z";
+            this.desSTD.Location = new System.Drawing.Point(588, 159);
+            this.desSTD.Name = "desSTD";
+            this.desSTD.ReadOnly = true;
+            this.desSTD.Size = new System.Drawing.Size(97, 20);
+            this.desSTD.TabIndex = 35;
             // 
             // promedio
             // 
             this.promedio.Location = new System.Drawing.Point(588, 133);
             this.promedio.Name = "promedio";
-            this.promedio.Size = new System.Drawing.Size(71, 20);
+            this.promedio.ReadOnly = true;
+            this.promedio.Size = new System.Drawing.Size(97, 20);
             this.promedio.TabIndex = 33;
             // 
             // label12
@@ -315,7 +269,8 @@ namespace Proyecto_Simulacion
             // 
             this.alfa.Location = new System.Drawing.Point(588, 105);
             this.alfa.Name = "alfa";
-            this.alfa.Size = new System.Drawing.Size(71, 20);
+            this.alfa.ReadOnly = true;
+            this.alfa.Size = new System.Drawing.Size(97, 20);
             this.alfa.TabIndex = 31;
             // 
             // label13
@@ -342,35 +297,36 @@ namespace Proyecto_Simulacion
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(439, 253);
+            this.label15.Location = new System.Drawing.Point(479, 253);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(124, 18);
+            this.label15.Size = new System.Drawing.Size(78, 18);
             this.label15.TabIndex = 45;
-            this.label15.Text = "Limite Superior;";
+            this.label15.Text = "Zalpha/2;";
             // 
             // Lim_Sup
             // 
             this.Lim_Sup.Location = new System.Drawing.Point(588, 254);
             this.Lim_Sup.Name = "Lim_Sup";
-            this.Lim_Sup.Size = new System.Drawing.Size(71, 20);
+            this.Lim_Sup.ReadOnly = true;
+            this.Lim_Sup.Size = new System.Drawing.Size(97, 20);
             this.Lim_Sup.TabIndex = 44;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(380, 303);
+            this.label10.Location = new System.Drawing.Point(406, 340);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(86, 18);
             this.label10.TabIndex = 37;
             this.label10.Text = "Respuesta:";
             // 
-            // cantidadNumeros
+            // respuesta
             // 
-            this.cantidadNumeros.Location = new System.Drawing.Point(472, 301);
-            this.cantidadNumeros.Name = "cantidadNumeros";
-            this.cantidadNumeros.Size = new System.Drawing.Size(187, 20);
-            this.cantidadNumeros.TabIndex = 38;
+            this.respuesta.Location = new System.Drawing.Point(498, 338);
+            this.respuesta.Name = "respuesta";
+            this.respuesta.Size = new System.Drawing.Size(187, 20);
+            this.respuesta.TabIndex = 38;
             // 
             // Regresar
             // 
@@ -378,26 +334,26 @@ namespace Proyecto_Simulacion
             this.Regresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Regresar.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Regresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Regresar.Location = new System.Drawing.Point(900, 479);
+            this.Regresar.Location = new System.Drawing.Point(809, 391);
             this.Regresar.Name = "Regresar";
             this.Regresar.Size = new System.Drawing.Size(100, 38);
             this.Regresar.TabIndex = 46;
-            this.Regresar.Text = "Regresar";
+            this.Regresar.Text = "Inicio";
             this.Regresar.UseVisualStyleBackColor = false;
             this.Regresar.Click += new System.EventHandler(this.Regresar_Click);
             // 
-            // textBox1
+            // gradoConfianza
             // 
-            this.textBox1.Location = new System.Drawing.Point(113, 285);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(71, 20);
-            this.textBox1.TabIndex = 48;
+            this.gradoConfianza.Location = new System.Drawing.Point(130, 355);
+            this.gradoConfianza.Name = "gradoConfianza";
+            this.gradoConfianza.Size = new System.Drawing.Size(71, 20);
+            this.gradoConfianza.TabIndex = 48;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(32, 269);
+            this.label16.Location = new System.Drawing.Point(49, 339);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(81, 36);
             this.label16.TabIndex = 47;
@@ -409,7 +365,7 @@ namespace Proyecto_Simulacion
             this.Prueba1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Prueba1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Prueba1.ForeColor = System.Drawing.Color.White;
-            this.Prueba1.Location = new System.Drawing.Point(215, 274);
+            this.Prueba1.Location = new System.Drawing.Point(232, 344);
             this.Prueba1.Name = "Prueba1";
             this.Prueba1.Size = new System.Drawing.Size(104, 31);
             this.Prueba1.TabIndex = 49;
@@ -417,154 +373,78 @@ namespace Proyecto_Simulacion
             this.Prueba1.UseVisualStyleBackColor = false;
             this.Prueba1.Click += new System.EventHandler(this.Prueba1_Click);
             // 
-            // textBox2
+            // dataGridView1
             // 
-            this.textBox2.Location = new System.Drawing.Point(196, 526);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(71, 20);
-            this.textBox2.TabIndex = 58;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.PaleTurquoise;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.orden,
+            this.NuPseudo});
+            this.dataGridView1.Location = new System.Drawing.Point(744, 145);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(254, 213);
+            this.dataGridView1.TabIndex = 133;
             // 
-            // label18
+            // orden
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(33, 526);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(132, 18);
-            this.label18.TabIndex = 57;
-            this.label18.Text = "Total de corridas:";
+            this.orden.HeaderText = "#";
+            this.orden.Name = "orden";
             // 
-            // textBox4
+            // NuPseudo
             // 
-            this.textBox4.Location = new System.Drawing.Point(196, 497);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(71, 20);
-            this.textBox4.TabIndex = 55;
+            this.NuPseudo.HeaderText = "Numeros Pseudo";
+            this.NuPseudo.Name = "NuPseudo";
             // 
-            // label19
+            // Prueba2
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(25, 496);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(140, 18);
-            this.label19.TabIndex = 54;
-            this.label19.Text = "Datos Estadisticos:";
+            this.Prueba2.BackColor = System.Drawing.Color.DarkCyan;
+            this.Prueba2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Prueba2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Prueba2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Prueba2.Location = new System.Drawing.Point(915, 391);
+            this.Prueba2.Name = "Prueba2";
+            this.Prueba2.Size = new System.Drawing.Size(100, 38);
+            this.Prueba2.TabIndex = 134;
+            this.Prueba2.Text = "Prueba 2";
+            this.Prueba2.UseVisualStyleBackColor = false;
+            this.Prueba2.Click += new System.EventHandler(this.Prueba2_Click);
             // 
-            // textBox5
+            // Salir
             // 
-            this.textBox5.Location = new System.Drawing.Point(196, 471);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(71, 20);
-            this.textBox5.TabIndex = 53;
+            this.Salir.BackColor = System.Drawing.Color.DarkCyan;
+            this.Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Salir.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Salir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Salir.Location = new System.Drawing.Point(585, 391);
+            this.Salir.Name = "Salir";
+            this.Salir.Size = new System.Drawing.Size(100, 38);
+            this.Salir.TabIndex = 135;
+            this.Salir.Text = "Salir";
+            this.Salir.UseVisualStyleBackColor = false;
+            this.Salir.Click += new System.EventHandler(this.Salir_Click);
             // 
-            // label20
+            // label11
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(90, 471);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(75, 18);
-            this.label20.TabIndex = 52;
-            this.label20.Text = "Varianza:";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(196, 443);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(71, 20);
-            this.textBox6.TabIndex = 51;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(50, 442);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(121, 18);
-            this.label21.TabIndex = 50;
-            this.label21.Text = "Valor Esperado:";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkCyan;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(163, 571);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 31);
-            this.button1.TabIndex = 59;
-            this.button1.Text = "Prueba 2";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Georgia", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(55, 404);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(227, 23);
-            this.label17.TabIndex = 60;
-            this.label17.Text = "Prueba de frecuencias";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(383, 414);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(203, 18);
-            this.label22.TabIndex = 62;
-            this.label22.Text = "Numeros Pseudoaleatrorios";
-            // 
-            // tabla2
-            // 
-            this.tabla2.BackgroundColor = System.Drawing.Color.LightSeaGreen;
-            this.tabla2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabla2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabla2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            this.tabla2.Location = new System.Drawing.Point(367, 435);
-            this.tabla2.Name = "tabla2";
-            this.tabla2.ReadOnly = true;
-            this.tabla2.Size = new System.Drawing.Size(274, 150);
-            this.tabla2.TabIndex = 61;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "#";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Num.Pseudo";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(434, 158);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(123, 18);
+            this.label11.TabIndex = 136;
+            this.label11.Text = "Desviacion STD;";
             // 
             // Pruebas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1075, 688);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.tabla2);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label21);
+            this.ClientSize = new System.Drawing.Size(1075, 466);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.Salir);
+            this.Controls.Add(this.Prueba2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Prueba1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.gradoConfianza);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.Regresar);
             this.Controls.Add(this.label15);
@@ -574,34 +454,31 @@ namespace Proyecto_Simulacion
             this.Controls.Add(this.valorDistribucion);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.LimpiarF1);
-            this.Controls.Add(this.cantidadNumeros);
+            this.Controls.Add(this.respuesta);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.Lim_inf);
-            this.Controls.Add(this.Za_z);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.desSTD);
             this.Controls.Add(this.promedio);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.alfa);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.tablaValores);
             this.Controls.Add(this.Generador);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.numeros);
+            this.Controls.Add(this.TotalNum);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.variableXN);
-            this.Controls.Add(this.variableM);
+            this.Controls.Add(this.varXn);
+            this.Controls.Add(this.varM);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.variableC);
+            this.Controls.Add(this.varC);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.variableA);
+            this.Controls.Add(this.varA);
             this.Controls.Add(this.label2);
             this.Name = "Pruebas";
             this.Text = "Pruebas_PseudoAleatrorios";
             this.Load += new System.EventHandler(this.Pruebas_PseudoAleatrorios_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.tablaValores)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabla2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -610,26 +487,24 @@ namespace Proyecto_Simulacion
         #endregion
 
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox numeros;
+        private System.Windows.Forms.TextBox TotalNum;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox variableXN;
-        private System.Windows.Forms.TextBox variableM;
+        private System.Windows.Forms.TextBox varXn;
+        private System.Windows.Forms.TextBox varM;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox variableC;
+        private System.Windows.Forms.TextBox varC;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox variableA;
+        private System.Windows.Forms.TextBox varA;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Generador;
-        private System.Windows.Forms.DataGridView tablaValores;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox valorDistribucion;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button LimpiarF1;
         private System.Windows.Forms.TextBox Lim_inf;
-        private System.Windows.Forms.TextBox Za_z;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox desSTD;
         private System.Windows.Forms.TextBox promedio;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox alfa;
@@ -638,26 +513,16 @@ namespace Proyecto_Simulacion
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox Lim_Sup;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox cantidadNumeros;
+        private System.Windows.Forms.TextBox respuesta;
         private System.Windows.Forms.Button Regresar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn orden;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numPse;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox gradoConfianza;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button Prueba1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DataGridView tabla2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn orden;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NuPseudo;
+        private System.Windows.Forms.Button Prueba2;
+        private System.Windows.Forms.Button Salir;
+        private System.Windows.Forms.Label label11;
     }
 }

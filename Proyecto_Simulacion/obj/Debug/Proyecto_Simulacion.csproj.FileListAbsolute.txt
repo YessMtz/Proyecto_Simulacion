@@ -22,3 +22,4 @@ C:\Users\maria\Desktop\Proyecto_Simulacion\Proyecto_Simulacion\obj\Debug\Proyect
 C:\Users\maria\Desktop\Proyecto_Simulacion\Proyecto_Simulacion\obj\Debug\Proyecto_Simulacion.exe
 C:\Users\maria\Desktop\Proyecto_Simulacion\Proyecto_Simulacion\obj\Debug\Proyecto_Simulacion.pdb
 C:\Users\maria\Desktop\Proyecto_Simulacion\Proyecto_Simulacion\obj\Debug\Proyecto_Simulacion.Pruebas.resources
+C:\Users\maria\Desktop\Proyecto_Simulacion\Proyecto_Simulacion\obj\Debug\Proyecto_Simulacion.Pruebas_Pseudo2.resources

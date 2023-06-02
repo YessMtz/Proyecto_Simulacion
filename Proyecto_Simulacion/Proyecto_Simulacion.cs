@@ -31,7 +31,14 @@ namespace Proyecto_Simulacion
         private void Pruebas_Click(object sender, EventArgs e)
         {
             Form Form2 = new Pruebas();
-            Form2.ShowDialog();
+            Form2.Show();
+            this.Hide();
+        }
+
+        private void Prueba2_Click(object sender, EventArgs e)
+        {
+            Form Forma3 = new Pruebas_Pseudo2();
+            Forma3.Show();
             this.Hide();
         }
 
