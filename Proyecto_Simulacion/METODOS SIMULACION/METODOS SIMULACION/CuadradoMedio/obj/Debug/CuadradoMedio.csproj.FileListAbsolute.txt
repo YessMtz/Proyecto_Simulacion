@@ -1,0 +1,55 @@
+c:\users\kului\onedrive\documentos\visual studio 2012\Projects\CuadradoMedio\CuadradoMedio\bin\Debug\CuadradoMedio.exe.config
+c:\users\kului\onedrive\documentos\visual studio 2012\Projects\CuadradoMedio\CuadradoMedio\bin\Debug\CuadradoMedio.exe
+c:\users\kului\onedrive\documentos\visual studio 2012\Projects\CuadradoMedio\CuadradoMedio\bin\Debug\CuadradoMedio.pdb
+c:\users\kului\onedrive\documentos\visual studio 2012\Projects\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.csprojResolveAssemblyReference.cache
+c:\users\kului\onedrive\documentos\visual studio 2012\Projects\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.scroll.resources
+c:\users\kului\onedrive\documentos\visual studio 2012\Projects\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.Properties.Resources.resources
+c:\users\kului\onedrive\documentos\visual studio 2012\Projects\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.csproj.GenerateResource.Cache
+c:\users\kului\onedrive\documentos\visual studio 2012\Projects\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.exe
+c:\users\kului\onedrive\documentos\visual studio 2012\Projects\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.pdb
+D:\CuadradoMedio\CuadradoMedio\bin\Debug\CuadradoMedio.exe.config
+D:\CuadradoMedio\CuadradoMedio\bin\Debug\CuadradoMedio.exe
+D:\CuadradoMedio\CuadradoMedio\bin\Debug\CuadradoMedio.pdb
+D:\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.Properties.Resources.resources
+D:\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.csproj.GenerateResource.cache
+D:\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.exe
+D:\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.pdb
+D:\CuadradoMedio\CuadradoMedio\bin\Debug\execciones.pdb
+D:\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.menu.resources
+D:\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.cuadradomedio.resources
+D:\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.medioproducto.resources
+D:\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.Contantemul.resources
+D:\CuadradoMedio\CuadradoMedio\bin\Debug\execciones.dll
+D:\CuadradoMedio\CuadradoMedio\obj\Debug\CuadradoMedio.csprojResolveAssemblyReference.cache
+D:\Números speudoaleatorios\CuadradoMedio\bin\Debug\CuadradoMedio.exe.config
+D:\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.exe
+D:\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.pdb
+D:\Números speudoaleatorios\CuadradoMedio\bin\Debug\CuadradoMedio.exe
+D:\Números speudoaleatorios\CuadradoMedio\bin\Debug\CuadradoMedio.pdb
+D:\Números speudoaleatorios\CuadradoMedio\bin\Debug\execciones.pdb
+D:\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.cuadradomedio.resources
+D:\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.menu.resources
+D:\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.medioproducto.resources
+D:\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.Contantemul.resources
+D:\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.Properties.Resources.resources
+D:\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.csproj.GenerateResource.Cache
+D:\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.kolmogorov.resources
+D:\Números speudoaleatorios\CuadradoMedio\bin\Debug\chikolmogorov.dll
+D:\Números speudoaleatorios\CuadradoMedio\bin\Debug\chikolmogorov.pdb
+D:\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.csprojAssemblyReference.cache
+D:\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.csproj.CopyComplete
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\bin\Debug\CuadradoMedio.exe.config
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.exe
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.pdb
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\bin\Debug\CuadradoMedio.exe
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\bin\Debug\CuadradoMedio.pdb
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\bin\Debug\chikolmogorov.pdb
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\bin\Debug\execciones.pdb
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.csprojResolveAssemblyReference.cache
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.cuadradomedio.resources
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.menu.resources
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.medioproducto.resources
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.Contantemul.resources
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.kolmogorov.resources
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.Properties.Resources.resources
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.csproj.GenerateResource.Cache
