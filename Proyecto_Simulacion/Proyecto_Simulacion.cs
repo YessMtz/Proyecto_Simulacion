@@ -91,7 +91,7 @@ namespace Proyecto_Simulacion
             a = double.Parse(variableA.Text);
             c = double.Parse(variableC.Text);
             m = double.Parse(variableM.Text);
-            Xo = double.Parse(variableXo.Text);
+            Xo = double.Parse(variableXn.Text);
             valN= int.Parse(cantidadNumeros.Text);
 
             numerosX= new double[valN];

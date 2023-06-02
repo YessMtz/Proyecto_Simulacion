@@ -35,12 +35,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.variableM = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.variableXN = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cantidadNumeros = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.BntGenerar = new System.Windows.Forms.Button();
-            this.variableXo = new System.Windows.Forms.TextBox();
+            this.variableXn = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -227,13 +226,6 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "m:";
             // 
-            // variableXN
-            // 
-            this.variableXN.Location = new System.Drawing.Point(53, 198);
-            this.variableXN.Name = "variableXN";
-            this.variableXN.Size = new System.Drawing.Size(71, 20);
-            this.variableXN.TabIndex = 8;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -275,12 +267,12 @@
             this.BntGenerar.UseVisualStyleBackColor = false;
             this.BntGenerar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // variableXo
+            // variableXn
             // 
-            this.variableXo.Location = new System.Drawing.Point(53, 172);
-            this.variableXo.Name = "variableXo";
-            this.variableXo.Size = new System.Drawing.Size(71, 20);
-            this.variableXo.TabIndex = 14;
+            this.variableXn.Location = new System.Drawing.Point(53, 172);
+            this.variableXn.Name = "variableXn";
+            this.variableXn.Size = new System.Drawing.Size(71, 20);
+            this.variableXn.TabIndex = 14;
             // 
             // label7
             // 
@@ -1365,12 +1357,11 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.variableXo);
+            this.Controls.Add(this.variableXn);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.BntGenerar);
             this.Controls.Add(this.cantidadNumeros);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.variableXN);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.variableM);
             this.Controls.Add(this.label4);
@@ -1397,12 +1388,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox variableM;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox variableXN;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox cantidadNumeros;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button BntGenerar;
-        private System.Windows.Forms.TextBox variableXo;
+        private System.Windows.Forms.TextBox variableXn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox1;
