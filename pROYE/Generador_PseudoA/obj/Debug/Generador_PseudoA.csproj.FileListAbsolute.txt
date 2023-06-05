@@ -1,0 +1,8 @@
+C:\Users\Yessenia Winneman\source\repos\pROYE\Generador_PseudoA\bin\Debug\Generador_PseudoA.dll
+C:\Users\Yessenia Winneman\source\repos\pROYE\Generador_PseudoA\bin\Debug\Generador_PseudoA.pdb
+C:\Users\Yessenia Winneman\source\repos\pROYE\Generador_PseudoA\obj\Debug\Generador_PseudoA.csproj.AssemblyReference.cache
+C:\Users\Yessenia Winneman\source\repos\pROYE\Generador_PseudoA\obj\Debug\Generador_PseudoA.UserControl1.resources
+C:\Users\Yessenia Winneman\source\repos\pROYE\Generador_PseudoA\obj\Debug\Generador_PseudoA.csproj.GenerateResource.cache
+C:\Users\Yessenia Winneman\source\repos\pROYE\Generador_PseudoA\obj\Debug\Generador_PseudoA.csproj.CoreCompileInputs.cache
+C:\Users\Yessenia Winneman\source\repos\pROYE\Generador_PseudoA\obj\Debug\Generador_PseudoA.dll
+C:\Users\Yessenia Winneman\source\repos\pROYE\Generador_PseudoA\obj\Debug\Generador_PseudoA.pdb

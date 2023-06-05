@@ -1,0 +1,16 @@
+C:\Users\Yessenia Winneman\source\repos\pROYE\bin\Debug\pROYE.exe.config
+C:\Users\Yessenia Winneman\source\repos\pROYE\bin\Debug\pROYE.exe
+C:\Users\Yessenia Winneman\source\repos\pROYE\bin\Debug\pROYE.pdb
+C:\Users\Yessenia Winneman\source\repos\pROYE\obj\Debug\pROYE.csproj.AssemblyReference.cache
+C:\Users\Yessenia Winneman\source\repos\pROYE\obj\Debug\pROYE.Properties.Resources.resources
+C:\Users\Yessenia Winneman\source\repos\pROYE\obj\Debug\pROYE.csproj.GenerateResource.cache
+C:\Users\Yessenia Winneman\source\repos\pROYE\obj\Debug\pROYE.csproj.CoreCompileInputs.cache
+C:\Users\Yessenia Winneman\source\repos\pROYE\obj\Debug\pROYE.exe
+C:\Users\Yessenia Winneman\source\repos\pROYE\obj\Debug\pROYE.pdb
+C:\Users\Yessenia Winneman\source\repos\pROYE\obj\Debug\pROYE.Prueba_1.resources
+C:\Users\Yessenia Winneman\source\repos\pROYE\obj\Debug\pROYE.Problema_1.resources
+C:\Users\Yessenia Winneman\source\repos\pROYE\obj\Debug\pROYE.Problema_2.resources
+C:\Users\Yessenia Winneman\source\repos\pROYE\obj\Debug\pROYE.Inicio.resources
+C:\Users\Yessenia Winneman\source\repos\pROYE\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\Yessenia Winneman\source\repos\pROYE\bin\Debug\Generador_PseudoA.dll
+C:\Users\Yessenia Winneman\source\repos\pROYE\bin\Debug\Generador_PseudoA.pdb
