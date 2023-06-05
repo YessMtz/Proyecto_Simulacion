@@ -157,10 +157,12 @@
             this.textBox70 = new System.Windows.Forms.TextBox();
             this.textBox71 = new System.Windows.Forms.TextBox();
             this.Limpiar = new System.Windows.Forms.Button();
-            this.Salir = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.orden = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NuPseudo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Pruebas = new System.Windows.Forms.Button();
+            this.Salir1 = new System.Windows.Forms.Button();
+            this.Prueba2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1196,20 +1198,6 @@
             this.Limpiar.UseVisualStyleBackColor = false;
             this.Limpiar.Click += new System.EventHandler(this.Limpiar_Click);
             // 
-            // Salir
-            // 
-            this.Salir.BackColor = System.Drawing.Color.DarkCyan;
-            this.Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Salir.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Salir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Salir.Location = new System.Drawing.Point(1103, 283);
-            this.Salir.Name = "Salir";
-            this.Salir.Size = new System.Drawing.Size(100, 30);
-            this.Salir.TabIndex = 131;
-            this.Salir.Text = "Salir";
-            this.Salir.UseVisualStyleBackColor = false;
-            this.Salir.Click += new System.EventHandler(this.Salir_Click);
-            // 
             // dataGridView2
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.Color.PaleTurquoise;
@@ -1233,14 +1221,58 @@
             this.NuPseudo.HeaderText = "Numeros Pseudo";
             this.NuPseudo.Name = "NuPseudo";
             // 
+            // Pruebas
+            // 
+            this.Pruebas.BackColor = System.Drawing.Color.DarkCyan;
+            this.Pruebas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Pruebas.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pruebas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Pruebas.Location = new System.Drawing.Point(575, 578);
+            this.Pruebas.Name = "Pruebas";
+            this.Pruebas.Size = new System.Drawing.Size(100, 30);
+            this.Pruebas.TabIndex = 133;
+            this.Pruebas.Text = "Prueba 1";
+            this.Pruebas.UseVisualStyleBackColor = false;
+            this.Pruebas.Click += new System.EventHandler(this.Pruebas_Click);
+            // 
+            // Salir1
+            // 
+            this.Salir1.BackColor = System.Drawing.Color.DarkCyan;
+            this.Salir1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Salir1.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Salir1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Salir1.Location = new System.Drawing.Point(702, 578);
+            this.Salir1.Name = "Salir1";
+            this.Salir1.Size = new System.Drawing.Size(100, 30);
+            this.Salir1.TabIndex = 134;
+            this.Salir1.Text = "Salir";
+            this.Salir1.UseVisualStyleBackColor = false;
+            this.Salir1.Click += new System.EventHandler(this.Salir1_Click);
+            // 
+            // Prueba2
+            // 
+            this.Prueba2.BackColor = System.Drawing.Color.DarkCyan;
+            this.Prueba2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Prueba2.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Prueba2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Prueba2.Location = new System.Drawing.Point(832, 578);
+            this.Prueba2.Name = "Prueba2";
+            this.Prueba2.Size = new System.Drawing.Size(100, 30);
+            this.Prueba2.TabIndex = 135;
+            this.Prueba2.Text = "Prueba 2";
+            this.Prueba2.UseVisualStyleBackColor = false;
+            this.Prueba2.Click += new System.EventHandler(this.Prueba2_Click);
+            // 
             // Proyecto_Simulacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1277, 620);
+            this.Controls.Add(this.Prueba2);
+            this.Controls.Add(this.Salir1);
+            this.Controls.Add(this.Pruebas);
             this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.Salir);
             this.Controls.Add(this.Limpiar);
             this.Controls.Add(this.label44);
             this.Controls.Add(this.label45);
@@ -1510,10 +1542,12 @@
         private System.Windows.Forms.TextBox textBox70;
         private System.Windows.Forms.TextBox textBox71;
         private System.Windows.Forms.Button Limpiar;
-        private System.Windows.Forms.Button Salir;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn orden;
         private System.Windows.Forms.DataGridViewTextBoxColumn NuPseudo;
+        private System.Windows.Forms.Button Pruebas;
+        private System.Windows.Forms.Button Salir1;
+        private System.Windows.Forms.Button Prueba2;
     }
 }
 

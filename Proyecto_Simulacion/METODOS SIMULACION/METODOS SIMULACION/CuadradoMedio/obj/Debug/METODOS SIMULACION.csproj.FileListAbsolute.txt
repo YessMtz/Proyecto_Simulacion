@@ -1,0 +1,24 @@
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\bin\Debug\CuadradoMedio.exe.config
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.exe
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\Números speudoaleatorios\CuadradoMedio\obj\Debug\CuadradoMedio.pdb
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\METODOS SIMULACION\CuadradoMedio\bin\Debug\CuadradoMedio.exe.config
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\METODOS SIMULACION\CuadradoMedio\obj\Debug\CuadradoMedio.exe
+C:\Users\JESADC\Documents\Visual Studio 2012\Projects\METODOS SIMULACION\CuadradoMedio\obj\Debug\CuadradoMedio.pdb
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\bin\Debug\CuadradoMedio.exe.config
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\bin\Debug\CuadradoMedio.exe
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\bin\Debug\CuadradoMedio.pdb
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\bin\Debug\chikolmogorov.pdb
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\bin\Debug\execciones.pdb
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\obj\Debug\METODOS SIMULACION.csproj.AssemblyReference.cache
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\obj\Debug\METODOS SIMULACION.csproj.SuggestedBindingRedirects.cache
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\obj\Debug\CuadradoMedio.cuadradomedio.resources
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\obj\Debug\CuadradoMedio.menu.resources
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\obj\Debug\CuadradoMedio.medioproducto.resources
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\obj\Debug\CuadradoMedio.Contantemul.resources
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\obj\Debug\CuadradoMedio.kolmogorov.resources
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\obj\Debug\CuadradoMedio.Properties.Resources.resources
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\obj\Debug\METODOS SIMULACION.csproj.GenerateResource.cache
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\obj\Debug\METODOS SIMULACION.csproj.CoreCompileInputs.cache
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\obj\Debug\METODOS SIMULACION.csproj.CopyComplete
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\obj\Debug\CuadradoMedio.exe
+C:\Users\maria\Downloads\METODOS SIMULACION\METODOS SIMULACION\CuadradoMedio\obj\Debug\CuadradoMedio.pdb
